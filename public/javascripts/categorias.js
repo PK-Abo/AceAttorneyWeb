@@ -1,0 +1,48 @@
+import { allCharacters } from '/javascripts/allCharacters.js';
+
+export const categorias = {
+    favoriteCharacter: { items: allCharacters, isSplit: true },
+    favoriteDefense: { items: allCharacters.filter(character => character.className.includes("defense")), isSplit: false },
+    favoriteProsecutor: { items: allCharacters.filter(character => character.className.includes("prosecutor")), isSplit: false },
+    favoriteAssistant: { items: allCharacters.filter(character => character.className.includes("assistant")), isSplit: false },
+    favoriteDetective: { items: allCharacters.filter(character => character.className.includes("detective")), isSplit: false },
+    favoriteVictim: { items: allCharacters.filter(character => character.className.includes("victim")), isSplit: false },
+    favoriteCulprit: { items: allCharacters.filter(character => character.className.includes("culprit")), isSplit: false },
+    favoriteDefendant: { items: allCharacters.filter(character => character.className.includes("defendant")), isSplit: false },
+    favoriteWitness: { items: allCharacters.filter(character => character.className.includes("witness")), isSplit: false },
+    dislikeCharacter: { items: allCharacters, isSplit: true },
+    hatedCharacter: { items: allCharacters, isSplit: true },
+    overratedCharacter: { items: allCharacters, isSplit: true },
+    underratedCharacter: { items: allCharacters, isSplit: true },
+    overhatedCharacter: { items: allCharacters, isSplit: true },
+    moreCharacter: { items: allCharacters, isSplit: true },
+    lessCharacter: { items: allCharacters, isSplit: true },
+    relateCharacter: { items: allCharacters, isSplit: true },
+    designCharacter: { items: allCharacters, isSplit: true },
+    spinoffCharacter: { items: allCharacters, isSplit: true },
+    backCharacter: { items: allCharacters, isSplit: true },
+    //favorite Judge
+};     
+
+export const nombresCategorias = {
+    favoriteCharacter: "Favorite character",
+    favoriteDefense: "Favorite defense",
+    favoriteProsecutor: "Favorite prosecutor",
+    favoriteAssistant: "Favorite assistant",
+    favoriteDetective: "Favorite detective",
+    favoriteVictim: "Favorite victim",
+    favoriteCulprit: "Favorite culprit",
+    favoriteDefendant: "Favorite defendant",
+    favoriteWitness: "Favorite witness",
+    dislikeCharacter: "Character you dislike",
+    hatedCharacter: "Character you hated at first",
+    overratedCharacter: "Overrated character",
+    underratedCharacter: "Underrated character",
+    overhatedCharacter: "Overhated character",
+    moreCharacter: "Character you expected to like more",
+    lessCharacter: "Character you expected to like less",
+    relateCharacter: "Character you relate to",
+    designCharacter: "Favorite design",
+    spinoffCharacter: "Character who deserves a spin-off",
+    backCharacter: "Character you want back",
+};  

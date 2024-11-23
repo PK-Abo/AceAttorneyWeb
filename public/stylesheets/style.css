@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.cuadrado {
+  border: solid 2px grey;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-items: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+
+/* Asegura que el tamaño de la tarjeta se ajuste a su contenido */
+.card {
+  max-width: 300px;
+  z-index: 10; /* Superpone las subventanas */
+}
+
+
+.toggle-image {
+  width: 100px; /* Ajusta el tamaño según prefieras */
+  height: 150px;
+  cursor: pointer;
+}
+
+.toggle-image.inactive {
+  filter: grayscale(100%); /* Aplica el filtro para la imagen desactivada */
+}
+
+#colecciones {
+  margin-bottom: 60px; /* Aumenta el espacio debajo de las imágenes de colección para evitar superposición */
+  display: flex;       /* Organiza las imágenes en una fila */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 30px; /* Añade espacio horizontal entre cada imagen */
+}
+
+.characters p {
+  margin-top: 130px; /* Añade espacio adicional sobre el texto "CHARACTERS" */
+}
