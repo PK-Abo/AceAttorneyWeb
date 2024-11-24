@@ -10,7 +10,7 @@ body {
 
 .card-body {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   gap: 10px; /* Espacio entre las imágenes */
   justify-items: center; /* Centra los elementos horizontalmente */
   align-items: center; /* Centra los elementos verticalmente */
@@ -19,7 +19,7 @@ body {
 
 /* Asegura que el tamaño de la tarjeta se ajuste a su contenido */
 .card {
-  max-width: 300px;
+  max-width: 425px;
   z-index: 10; /* Superpone las subventanas */
 }
 

@@ -119,11 +119,11 @@ $(document).ready(function() {
     
             const ventanaHTML = `
             <div class="col-auto">
-                <label class="switch mb-2">
+                <label class="switch mb-2 mt-5">
                     <input type="checkbox" ${isSplit ? 'checked' : ''} id="switch-${catKey}">
                     <span class="slider round"></span>
                 </label>
-                <div class="position-relative mb-5" style="width: 160px;">
+                <div class="position-relative" style="width: 160px;">
                     <div class="d-flex align-items-center justify-content-center" style="height: 50px; border: solid 2px grey; border-radius: 10px; margin-bottom: 10px; background-color: white;">
                         ${nombresCategorias[catKey]}
                     </div>
