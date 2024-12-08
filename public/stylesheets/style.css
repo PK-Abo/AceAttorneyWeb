@@ -8,6 +8,12 @@ body {
   border-radius: 10px;
 }
 
+#ventanasContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 190px); /* Siempre 6 columnas de 200px */
+}
+
+
 .card-body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));

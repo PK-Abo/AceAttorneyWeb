@@ -234,7 +234,7 @@ $(document).ready(function() {
         const cat = $(el).closest('.card').attr('id').replace('subventana', '');
 
         // Extraer la parte relevante de `catKey` para la comparación
-        const categoryName = cat.replace('favorite', '').toLowerCase(); // 'defense', 'prosecutor', etc.
+        const categoryName = cat.replace('favorite', '').toLowerCase();
 
         let filteredCharacters;
         if (['favoriteDefense', 'favoriteProsecutor', 'favoriteAssistant', 'favoriteDetective', 'favoriteVictim', 'favoriteCulprit', 'favoriteDefendant', 'favoriteWitness'].includes(cat)) {
